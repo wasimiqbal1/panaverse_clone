@@ -17,11 +17,10 @@ const Header = () => {
         <li>
             <Link href={"/"}>Home</Link> 
         </li>
-        <li>Courses</li>
+        <li>
+            <Link href="/Courses">Courses</Link>
+        </li>
     </ul>
-
-
-
        
     </header>
   )
