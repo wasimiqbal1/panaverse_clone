@@ -2,7 +2,7 @@ import Wrapper from "@/components/shared/Wrapper";
 import Heroposter from "@/assets/Images/hero-poster.jpg";
 import Image from "next/image";
 //Components
-import  Button from "@/components/shared/Button";
+import Button from "@/components/shared/Button";
 
 const Hero = () => {
   return (
@@ -12,25 +12,27 @@ const Hero = () => {
           {/* {Left side} */}
           <div className="flex-1 px-1 ">
             <h4 className="text-teal-500 font-bold text-lg text-justify">
-              Presidential Initiative for Artificial Intelligence &
-              Computing (PIAIC)
+              Presidential Initiative for Artificial Intelligence & Computing
+              (PIAIC)
             </h4>
-            <h1 className="text-5xl font-semibold mt-2 text-gray-900 ">
+            <h1 className="text-5xl font-semibold mt-2 text-gray-900 mt-2">
               Certified Web 3.0 and Metaverse Developer
             </h1>
-            <p className="mt-4 text-slate-600  text-lg text-justify mr-4">
-              One and Quarter Years Panaverse DAO Earn as you Learn Program
-              Getting Ready for the Next Generation of the Internet
-              Consolidating Web 3.0, Metaverse, Artificial Intelligence (AI),
-              Cloud, Edge, Ambient Computing/IoT, Network Automation, and
-              Bioinformatics Technologies
-            </p>
-            <div className="flex">
-              <Button text={"Enroll Now"}/>
-              
+            <div className="mt-6 text-slate-600  text-lg text-justify">
+              <p>
+                One and Quarter Years Panaverse DAO Earn as you Learn Program
+                Getting Ready for the Next Generation of the Internet
+              </p>
+              <p className="mt-5">
+                {" "}
+                Consolidating Web 3.0, Metaverse, Artificial Intelligence (AI),
+                Cloud, Edge, Ambient Computing/IoT, Network Automation, and
+                Bioinformatics Technologies
+              </p>
             </div>
-
-
+            <div className="flex ">
+              <Button text={"Enroll Now"} />
+            </div>
           </div>
           {/* {Right side} */}
           <div className="flex-1 px-1">
