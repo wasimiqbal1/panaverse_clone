@@ -1,19 +1,21 @@
 import Wrapper from "@/components/shared/Wrapper";
 import Heroposter from "@/assets/Images/hero-poster.jpg";
 import Image from "next/image";
+//Components
+import  Button from "@/components/shared/Button";
 
 const Hero = () => {
   return (
     <section>
       <Wrapper>
-        <div className="flex items-center">
+        <div className="flex flex-col md:flex-row items-center">
           {/* {Left side} */}
           <div className="flex-1 px-1 ">
             <h4 className="text-teal-500 font-bold text-lg text-justify">
               Presidential Initiative for Artificial Intelligence &
               Computing (PIAIC)
             </h4>
-            <h1 className="text-5xl font-semibold mt-2 ">
+            <h1 className="text-5xl font-semibold mt-2 text-gray-900 ">
               Certified Web 3.0 and Metaverse Developer
             </h1>
             <p className="mt-4 text-slate-600  text-lg text-justify mr-4">
@@ -23,9 +25,12 @@ const Hero = () => {
               Cloud, Edge, Ambient Computing/IoT, Network Automation, and
               Bioinformatics Technologies
             </p>
-            <button className="mt-6 text-bold h-10 px-5 text-white transition-colors duration-150 bg-teal-600	 rounded-full focus:shadow-outline hover:bg-teal-800">
-              Learn More
-            </button>
+            <div className="flex">
+              <Button text={"Enroll Now"}/>
+              
+            </div>
+
+
           </div>
           {/* {Right side} */}
           <div className="flex-1 px-1">
