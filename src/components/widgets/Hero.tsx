@@ -9,9 +9,9 @@ const Hero = () => {
         <div className="flex items-center">
           {/* {Left side} */}
           <div className="flex-1 px-1 ">
-            <h4 className="text-teal-500 font-semibold text-lg">
+            <h4 className="text-teal-500 font-bold text-lg text-justify">
               Presidential Initiative for Artificial Intelligence &
-              Computing(PIAIC)
+              Computing (PIAIC)
             </h4>
             <h1 className="text-5xl font-semibold mt-2 ">
               Certified Web 3.0 and Metaverse Developer
