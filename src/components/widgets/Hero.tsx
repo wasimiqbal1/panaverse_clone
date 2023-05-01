@@ -15,10 +15,10 @@ const Hero = () => {
               Presidential Initiative for Artificial Intelligence & Computing
               (PIAIC)
             </h4>
-            <h1 className="text-5xl font-semibold text-gray-900 mt-2">
+            <h1 className="text-5xl font-semibold text-gray-900 mt-3">
               Certified Web 3.0 and Metaverse Developer
             </h1>
-            <div className="mt-6 text-slate-600  text-lg text-justify">
+            <div className="mt-6 text-slate-600 mr-5 text-lg text-justify">
               <p>
                 One and Quarter Years Panaverse DAO Earn as you Learn Program
                 Getting Ready for the Next Generation of the Internet
@@ -30,7 +30,7 @@ const Hero = () => {
                 Bioinformatics Technologies
               </p>
             </div>
-            <div className="flex ">
+            <div>
               <Button text={"Enroll Now"} />
             </div>
           </div>
