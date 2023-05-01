@@ -1,6 +1,26 @@
 import Wrapper from "@/components/shared/Wrapper";
 import Button from "@/components/shared/Button";
 
+const CoreTracksData = [
+  {
+    header: "Quarter I",
+    discription: "CS-101: Object-Oriented Programming using TypeScript",
+    number: 1,
+  },
+  {
+    header: "Quarter II",
+    discription:
+      "W2-201: Developing Planet-Scale Web 2.0 Serverless Cloud Cloud Apps and APIs using Next.js 13, TailwindCSS, and Serverless PostgreSQL Databases",
+    number: 2,
+  },
+  {
+    header: "Quarter III",
+    discription:
+      "$-301: Dollar Making Bootcamp - Full-Stack Template, API, and Product Development. W3-301: Developing Web 3.0 DApps using Solidity, Ethers.js, Hardhat, and Account Abstraction",
+    number: 3,
+  },
+];
+
 const CoreTracks = () => {
   return (
     <section className="mt-16 lg:mt-28">
@@ -23,23 +43,17 @@ const CoreTracks = () => {
           </div>
         </div>
         {/* {Boxes} */}
-        <div className="my-20 flex gap-x-4">
-          <div className="border rounded-md w-4/12 px-8 py-12 relative">
-            <h4 className="font-bold text-lg ">Quarter I</h4>
-            <p className="mt-2 text-slate-800">CS-101: Object-Oriented Programming using TypeScript</p>
-            <span className="absolute top-0 right-10 text-9xl font-bold -z-10 text-gray-200">1</span>
-          </div>
-          <div className="border rounded-md w-4/12 px-8 py-12 relative">
-            <h4 className="font-bold text-lg ">Quarter II</h4>
-            <p className="mt-2 text-slate-800">CS-101: Object-Oriented Programming using TypeScript</p>
-            <span className="absolute top-0 right-10 text-9xl font-bold -z-10 text-gray-200">2</span>
-          </div>
-          <div className="border rounded-md w-4/12 px-8 py-12 relative">
-            <h4 className="font-bold text-lg ">Quarter III</h4>
-            <p className="mt-2 text-slate-800">CS-101: Object-Oriented Programming using TypeScript</p>
-            <span className="absolute top-0 right-10 text-9xl font-bold -z-10 text-gray-200">3</span>
-          </div>
 
+        <div className="my-20 flex gap-x-4 max-w-screen-xl">
+          {CoreTracksData.map((item, i) => (
+            <div className="border rounded-md w-4/12 px-8 py-12 relative flex flex-col">
+              <h4 className="font-bold text-lg ">{item.header}</h4>
+              <p className="mt-2 text-slate-800">{item.discription}</p>
+              <span className="absolute top-0 right-10 text-9xl font-bold -z-10 text-gray-200">
+                {item.number}
+              </span>
+            </div>
+          ))}
         </div>
       </Wrapper>
     </section>
