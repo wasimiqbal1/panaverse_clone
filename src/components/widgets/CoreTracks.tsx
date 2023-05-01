@@ -23,7 +23,7 @@ const CoreTracks = () => {
           </div>
         </div>
         {/* {Boxes} */}
-        <div className="my-20 flex ">
+        <div className="my-20 flex gap-x-4">
           <div className="border rounded-md w-4/12 px-8 py-12 relative">
             <h4 className="font-bold text-lg ">Quarter I</h4>
             <p className="mt-2 text-slate-800">CS-101: Object-Oriented Programming using TypeScript</p>
