@@ -24,7 +24,6 @@ const Hero = () => {
                 Getting Ready for the Next Generation of the Internet
               </p>
               <p className="mt-5">
-                {" "}
                 Consolidating Web 3.0, Metaverse, Artificial Intelligence (AI),
                 Cloud, Edge, Ambient Computing/IoT, Network Automation, and
                 Bioinformatics Technologies
