@@ -46,10 +46,10 @@ const CoreTracks = () => {
 
         <div className="my-20 flex gap-x-4 max-w-screen-xl">
           {CoreTracksData.map((item, i) => (
-            <div className="border rounded-md w-4/12 px-8 py-12 relative flex flex-col">
+            <div className="border rounded-md w-4/12 px-8 py-10 relative flex flex-col justify-center">
               <h4 className="font-bold text-lg ">{item.header}</h4>
               <p className="mt-2 text-slate-800">{item.discription}</p>
-              <span className="absolute top-0 right-10 text-9xl font-bold -z-10 text-gray-200">
+              <span className="absolute -top-10 right-10 text-[170px] font-bold -z-10 text-gray-200">
                 {item.number}
               </span>
             </div>
