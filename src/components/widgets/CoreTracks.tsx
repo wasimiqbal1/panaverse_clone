@@ -44,7 +44,7 @@ const CoreTracks = () => {
         </div>
         {/* {Boxes} */}
 
-        <div className="my-20 flex flex-col md:flex-row gap-x-4 ">
+        <div className="my-20 flex flex-col md:flex-row gap-x-8 gap-y-6 ">
           {CoreTracksData.map((item, i) => (
             <div className="border rounded-md flex-1 px-8 py-12 relative flex flex-col justify-center">
               <h4 className="font-bold text-lg ">{item.header}</h4>
