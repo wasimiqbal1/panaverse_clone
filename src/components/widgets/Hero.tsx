@@ -35,7 +35,7 @@ const Hero = () => {
           </div>
           {/* {Right side} */}
           <div className="flex-1 px-1">
-            <Image src={Heroposter} alt="Hero Poster" />
+            <Image src={Heroposter} alt="Hero Poster"/>
           </div>
         </div>
       </Wrapper>
