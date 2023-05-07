@@ -4,6 +4,7 @@ interface Iprops {
   header: string;
   discription: string;
   number: number;
+  haveBorder?: boolean;
 }
 
 const Quarterbox: FC<Iprops> = ({ header, discription, number }) => {
