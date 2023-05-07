@@ -1,5 +1,6 @@
 import Wrapper from "@/components/shared/Wrapper";
 import Button from "@/components/shared/Button";
+import Quarterbox from "@/components/widgets/QuarterBox";
 
 const CoreTracksData = [
   {
@@ -44,19 +45,21 @@ const CoreTracks = () => {
         </div>
         {/* {Boxes} */}
 
+
         <div className="my-20 flex flex-col md:flex-row gap-x-8 gap-y-6 ">
-          {CoreTracksData.map((item, i) => (
-            <div className="border rounded-md flex-1 px-8 py-12 relative flex flex-col justify-center">
-              <h4 className="font-bold text-lg ">{item.header}</h4>
-              <p className="mt-2 text-slate-800">{item.discription}</p>
-              <span className="absolute -top-10 right-10 text-[170px] font-bold -z-10 text-gray-200">
-                {item.number}
-              </span>
-            </div>
-          ))}
+          {
+          CoreTracksData.map((item, i) => (
+            <Quarterbox
+            discription={item.discription}
+            header={item.header}
+            number={ i + 1}
+            />
+            ))}
         </div>
-      </Wrapper>
+        
+               
+         </Wrapper>
     </section>
-  );
-};
+  )
+}
 export default CoreTracks;
