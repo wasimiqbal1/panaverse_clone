@@ -12,16 +12,35 @@ export const programsData = [
         discription:
           "W3-351: Developing Advanced Smart Contracts and Oracles and Planet-Scale Web 3.0 DApps",
         header: "Quarter IV",
-        number: 4
+        number: 4,
       },
       {
         discription:
           "MV-361: Developing Planet-Scale Open Virtual and Augmented Metaverse Experiences",
         header: "Quarter V",
-        number: 5
+        number: 5,
       },
-    ]
-  }
+    ],
+  },
+  {
+    headers: "Web 3.0 (Blockchain) and Metaverse Specialization",
+    description:
+      "This Web 3.0 and Metaverse specialization focuses on developing full-stack Web 3.0 and Metaverse experiences for the next generation of the internet by specializing in building worlds that merge the best of cutting-edge decentralized distributed blockchains with 3D metaverse client experiences.",
+    quarters: [
+      {
+        discription:
+          "W3-351: Developing Advanced Smart Contracts and Oracles and Planet-Scale Web 3.0 DApps",
+        header: "Quarter IV",
+        number: 4,
+      },
+      {
+        discription:
+          "MV-361: Developing Planet-Scale Open Virtual and Augmented Metaverse Experiences",
+        header: "Quarter V",
+        number: 5,
+      },
+    ],
+  },
 ];
 
 const SpecializedTrack = () => {
