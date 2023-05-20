@@ -1,6 +1,6 @@
 import Wrapper from "@/components/shared/Wrapper";
 import Button from "@/components/shared/Button";
-import Quarterbox from "@/components/widgets/QuarterBox";
+import Quarterbox from "@/components/shared/QuarterBox";
 
 const CoreTracksData = [
   {
