@@ -1,14 +1,17 @@
 import React from "react";
 import Wrapper from "@/components/shared/Wrapper";
 import Quarterbox from "@/components/shared/QuarterBox";
+import Image from "next/image";
 //Images 
+import Web3Img  from "@/assets/images/web 3.webp";
 
 export const programsData = [
   {
     headers: "Web 3.0 (Blockchain) and Metaverse Specialization",
     description:
       "This Web 3.0 and Metaverse specialization focuses on developing full-stack Web 3.0 and Metaverse experiences for the next generation of the internet by specializing in building worlds that merge the best of cutting-edge decentralized distributed blockchains with 3D metaverse client experiences.",
-    quarters: [
+    image: Web3Img,
+      quarters: [
       {
         discription:
           "W3-351: Developing Advanced Smart Contracts and Oracles and Planet-Scale Web 3.0 DApps",
@@ -27,7 +30,9 @@ export const programsData = [
     headers: "II.	Artificial Intelligence (AI) and Deep Learning Specialization",
     description:
       "The AI and Deep Learning specialization focuses on building and deploying intelligent APIs using OpenAI models and building custom Deep Learning Tensorflow models.",
-    quarters: [
+      image: Web3Img,
+
+      quarters: [
       {
         discription:
           "AI-351: Developing Planet-Scale Intelligent APIs and Python Programming",
@@ -42,6 +47,28 @@ export const programsData = [
       },
     ],
   },
+  {
+    headers: "II.	Artificial Intelligence (AI) and Deep Learning Specialization",
+    description:
+      "The AI and Deep Learning specialization focuses on building and deploying intelligent APIs using OpenAI models and building custom Deep Learning Tensorflow models.",
+      image: Web3Img,
+
+      quarters: [
+      {
+        discription:
+          "AI-351: Developing Planet-Scale Intelligent APIs and Python Programming",
+        header: "Quarter IV",
+        number: 4,
+      },
+      {
+        discription:
+          "AI-361: Deep Learning and MLOps",
+        header: "Quarter V",
+        number: 5,
+      },
+    ],
+  },
+
 ];
 
 const SpecializedTrack = () => {
@@ -105,33 +132,26 @@ const SpecializedTrack = () => {
             </div>
           </div>
           {/* Content Right */}
-          <div className=" px-4 py-6 bg-slate-200 basis-4/12 flex-1 ">
-            <div className=" flex gap-x-4 items-center cursor-pointer">
-              <div>
-                <div className="w-20 h-16 rounded bg-red-300 "></div>
+          <div className=" px-4 py-6 space-y-4 bg-slate-200 basis-4/12 flex-1 ">
+            {
+              programsData.map((item, i)=>(
+                <div key={i} className=" flex gap-x-4 items-center cursor-pointer">
+                <div className="flex-shrink-0 h-24 w-36">
+                 <Image src={item.image} alt={item.headers} className="h-24  object-cover"/> 
+                </div>
+                <div>
+                  <h4 className="text-primary font-medium">
+                    Specialized Program
+                  </h4>
+                  <h3 className="text-xl font-semibold ">
+                    {item.headers}
+                  </h3>
+                </div>
               </div>
-              <div>
-                <h4 className="text-primary font-medium">
-                  Specialized Program
-                </h4>
-                <h3 className="text-xl font-semibold ">
-                  Web 3.0 (Blockchain) and Metaverse Specialization
-                </h3>
-              </div>
-            </div>
-            <div className=" flex gap-x-4 items-center cursor-pointer">
-              <div>
-                <div className="w-20 h-16 rounded bg-red-300 "></div>
-              </div>
-              <div>
-                <h4 className="text-primary font-medium">
-                  Specialized Program
-                </h4>
-                <h3 className="text-xl font-semibold ">
-                  Web 3.0 (Blockchain) and Metaverse Specialization
-                </h3>
-              </div>
-            </div>
+                 
+              ))
+            }
+
           </div>
         </div>
       </Wrapper>
