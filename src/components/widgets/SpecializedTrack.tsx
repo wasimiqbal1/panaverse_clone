@@ -1,6 +1,7 @@
 import React from "react";
 import Wrapper from "@/components/shared/Wrapper";
 import Quarterbox from "./QuarterBox";
+//Images
 
 export const programsData = [
   {
