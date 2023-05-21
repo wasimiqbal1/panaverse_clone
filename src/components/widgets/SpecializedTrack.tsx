@@ -47,28 +47,7 @@ export const programsData = [
       },
     ],
   },
-  {
-    headers: "II.	Artificial Intelligence (AI) and Deep Learning Specialization",
-    description:
-      "The AI and Deep Learning specialization focuses on building and deploying intelligent APIs using OpenAI models and building custom Deep Learning Tensorflow models.",
-      image: Web3Img,
-
-      quarters: [
-      {
-        discription:
-          "AI-351: Developing Planet-Scale Intelligent APIs and Python Programming",
-        header: "Quarter IV",
-        number: 4,
-      },
-      {
-        discription:
-          "AI-361: Deep Learning and MLOps",
-        header: "Quarter V",
-        number: 5,
-      },
-    ],
-  },
-
+  
 ];
 
 const SpecializedTrack = () => {
