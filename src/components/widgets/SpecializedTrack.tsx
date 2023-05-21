@@ -7,6 +7,7 @@ import Web3Img  from "@/assets/images/web 3.webp";
 
 export const programsData = [
   {
+    slug : "wmd",
     headers: "Web 3.0 (Blockchain) and Metaverse Specialization",
     description:
       "This Web 3.0 and Metaverse specialization focuses on developing full-stack Web 3.0 and Metaverse experiences for the next generation of the internet by specializing in building worlds that merge the best of cutting-edge decentralized distributed blockchains with 3D metaverse client experiences.",
@@ -27,6 +28,7 @@ export const programsData = [
     ],
   },
   {
+    slug : "ai",
     headers: "II.	Artificial Intelligence (AI) and Deep Learning Specialization",
     description:
       "The AI and Deep Learning specialization focuses on building and deploying intelligent APIs using OpenAI models and building custom Deep Learning Tensorflow models.",
@@ -63,7 +65,7 @@ const SpecializedTrack = () => {
             After completing the first three quarters the participants will
             select one or more specializations consisting of two courses each:
           </p>
-        </div>
+         </div>
         <div className="mt-10 flex gap-x-6 gap-y-8">
           {/* Content Left */}
           <div className="shadow-xl rounded-xl border border-slate-200 py-8 px-8 basis-8/12 ">
@@ -114,7 +116,7 @@ const SpecializedTrack = () => {
           <div className=" px-4 py-6 space-y-4 bg-slate-200 basis-4/12 flex-1 ">
             {
               programsData.map((item, i)=>(
-                <div key={i} className=" flex gap-x-4 items-center cursor-pointer">
+                <div key={item.slug} className=" flex gap-x-4 items-center cursor-pointer">
                 <div className="flex-shrink-0 h-24 w-36">
                  <Image src={item.image} alt={item.headers} className="h-24  object-cover"/> 
                 </div>
