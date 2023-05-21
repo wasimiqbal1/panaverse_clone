@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import Wrapper from "@/components/shared/Wrapper";
 import Quarterbox from "@/components/shared/QuarterBox";
 import Image from "next/image";
 //Images 
 import Web3Img  from "@/assets/images/web 3.webp";
+
 
 export const programsData = [
   {
@@ -53,7 +54,10 @@ export const programsData = [
 ];
 
 const SpecializedTrack = () => {
-  return (
+
+  const [selecteditem, setselecteditem] = useState("wmd")
+
+  return (  
     <section>
       <Wrapper>
         {/* Header */}
