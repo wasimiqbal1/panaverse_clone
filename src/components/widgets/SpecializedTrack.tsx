@@ -55,7 +55,8 @@ export const programsData = [
 
 const SpecializedTrack = () => {
 
-  const [selecteditem, setselecteditem] = useState("wmd")
+  // const [selectedItem, setSelectedItem] = useState("wmd")
+  
 
   return (  
     <section>
