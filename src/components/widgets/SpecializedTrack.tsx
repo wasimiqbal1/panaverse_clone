@@ -73,7 +73,7 @@ const SpecializedTrack = () => {
             select one or more specializations consisting of two courses each:
           </p>
          </div>
-        <div className="mt-10 flex gap-x-6 gap-y-8">
+        <div className="mt-10 flex flex-col-reverse lg:flex-row gap-x-6 gap-y-8">
           {/* Content Left */}
           <div className="shadow-xl rounded-xl border border-slate-200 py-8 px-8 basis-8/12 ">
             <h4 className="text-primary text-lg font-medium  ">
@@ -101,12 +101,13 @@ const SpecializedTrack = () => {
                 />
               </svg>
             </button>
-            <div className="flex gap-4 mt-8 ">
+            <div className="flex flex-col sm:flex-row gap-4 mt-8 ">
             {/* my-20 flex flex-col md:flex-row gap-x-8 gap-y-6 */}
 
             {
               selectedItemDate?.quarters.map((item)=>(
                 <Quarterbox
+                key={item.number}
                 discription={item.discription}
                 header={item.header}
                 number={item.number}
