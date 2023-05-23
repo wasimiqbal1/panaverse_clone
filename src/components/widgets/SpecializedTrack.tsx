@@ -101,18 +101,20 @@ const SpecializedTrack = () => {
                 />
               </svg>
             </button>
-            <div className="my-20 flex flex-col md:flex-row gap-x-8 gap-y-6">
-              <Quarterbox
-                discription="W2-201: Developing Planet-Scale Web 2.0 Serverless Cloud Cloud Apps and APIs using Next.js 13 and Cloud Development Kit (CDK) for Terraform"
-                header="Quarter IV"
-                number={4}
+            <div className="flex gap-4 mt-8 ">
+            {/* my-20 flex flex-col md:flex-row gap-x-8 gap-y-6 */}
+
+            {
+              selectedItemDate?.quarters.map((item)=>(
+                <Quarterbox
+                discription={item.discription}
+                header={item.header}
+                number={item.number}
                 haveBorder={false}
               />
-              <Quarterbox
-                discription="W2-201: Developing Planet-Scale Web 2.0 Serverless Cloud Cloud Apps and APIs using Next.js 13 and Cloud Development Kit (CDK) for Terraform"
-                header="Quarter V"
-                number={5}
-              />
+
+              ))
+            }
             </div>
           </div>
           {/* Content Right */}
