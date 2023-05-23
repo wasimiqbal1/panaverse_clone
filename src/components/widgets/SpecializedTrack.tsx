@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+"use client"
+
+import { useState } from "react";
 import Wrapper from "@/components/shared/Wrapper";
 import Quarterbox from "@/components/shared/QuarterBox";
 import Image from "next/image";
@@ -55,8 +57,9 @@ export const programsData = [
 
 const SpecializedTrack = () => {
 
-  // const [selectedItem, setSelectedItem] = useState("wmd")
+  const [selectedItem, setSelectedItem] = useState("wmd"); 
   
+  // const selectedItemDate = programsData.find((item) => item.slug === selectedItem)
 
   return (  
     <section>
