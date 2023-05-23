@@ -58,8 +58,7 @@ export const programsData = [
 const SpecializedTrack = () => {
 
   const [selectedItem, setSelectedItem] = useState("wmd"); 
-  
-  // const selectedItemDate = programsData.find((item) => item.slug === selectedItem)
+  const selectedItemDate = programsData.find((item) => item.slug === selectedItem)
 
   return (  
     <section>
@@ -81,14 +80,10 @@ const SpecializedTrack = () => {
               Specialized Program
             </h4>
             <h3 className="text-2xl font-bold mt-1 ">
-              Web 3.0 (Blockchain) and Metaverse Specialization
+              {selectedItemDate?.headers}
             </h3>
             <p className="text-lg text-slate-600 mt-2 ">
-              This Web 3.0 and Metaverse specialization focuses on developing
-              full-stack Web 3.0 and Metaverse experiences for the next
-              generation of the internet by specializing in building worlds that
-              merge the best of cutting-edge decentralized distributed
-              blockchains with 3D metaverse client experiences.
+              {selectedItemDate?.description}
             </p>
             <button className="text-primary text-xl mt-4 underline flex items-center gap-x-1.5 ">
               Learn More{" "}
@@ -124,7 +119,7 @@ const SpecializedTrack = () => {
           <div className=" px-4 py-6 space-y-4 bg-slate-200 basis-4/12 flex-1 ">
             {
               programsData.map((item, i)=>(
-                <div key={item.slug} className=" flex gap-x-4 items-center cursor-pointer">
+                <div onClick={()=>setSelectedItem(item.slug) } key={item.slug} className=" flex gap-x-4 items-center cursor-pointer">
                 <div className="flex-shrink-0 h-24 w-36">
                  <Image src={item.image} alt={item.headers} className="h-24  object-cover"/> 
                 </div>
