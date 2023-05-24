@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-10 bg-white">
       <Wrapper>
-        <div className="flex justify-between  sticky top-0 py-4 items-center">
+        <div className="flex justify-between py-4 items-center">
           {/* Logo */}
           <div>
             <Image src={Logo} alt="Panaverse Dao Logo" height={70} />
