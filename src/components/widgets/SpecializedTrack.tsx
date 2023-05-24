@@ -157,7 +157,7 @@ const SpecializedTrack = () => {
         </div>
         <div className="mt-10 flex flex-col-reverse lg:flex-row gap-x-6 gap-y-8">
           {/* Content Left */}
-          <div className="shadow-xl sticky top-0 self-start rounded-xl border border-slate-200 py-8 px-8 basis-8/12 ">
+          <div className="shadow-xl sticky top-28 self-start rounded-xl border border-slate-200 py-8 px-8 basis-8/12 ">
             <h4 className="text-primary text-lg font-medium  ">
               Specialized Program
             </h4>
