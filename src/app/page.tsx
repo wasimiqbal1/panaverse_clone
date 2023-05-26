@@ -1,6 +1,7 @@
 import Hero from "@/components/widgets/Hero";
 import CoreTracks from "@/components/widgets/CoreTracks";
 import SpecializedTrack from "@/components/widgets/SpecializedTrack";
+import ProgramOutcome from "@/components/widgets/ProgramOutcome";
 
 export default function Home() {
   return (
@@ -12,6 +13,9 @@ export default function Home() {
         <CoreTracks />
         {/* Specialized Track */}
         <SpecializedTrack />
+        {/* Outcome Section */}
+        <ProgramOutcome />
+        
       </main>
     </>
   )
