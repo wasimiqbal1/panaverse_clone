@@ -18,7 +18,7 @@ const Header = () => {
               <Link href={"/"}>Home</Link>
             </li>
             <li>
-              <Link href="/Courses">Courses</Link>
+              <Link href="https://www.panaverse.co/">Courses</Link>
             </li> 
           </ul>
         </div>

@@ -31,7 +31,7 @@ export const programsData = [
   },
   {
     slug: "ai",
-    headers: "II.	Artificial Intelligence (AI) and Deep Learning Specialization",
+    headers: "Artificial Intelligence (AI) and Deep Learning Specialization",
     description:
       "The AI and Deep Learning specialization focuses on building and deploying intelligent APIs using OpenAI models and building custom Deep Learning Tensorflow models.",
     image: Web3Img,
@@ -51,84 +51,84 @@ export const programsData = [
     ],
   },
   {
-    slug: "ai",
-    headers: "II.	Artificial Intelligence (AI) and Deep Learning Specialization",
+    slug: "cnc",
+    headers: "Cloud-Native Computing Specialization",
     description:
-      "The AI and Deep Learning specialization focuses on building and deploying intelligent APIs using OpenAI models and building custom Deep Learning Tensorflow models.",
+      "The Cloud-Native Computing Specialization focuses on Containers, Kubernetes, and CDK for Kubernetes.",
     image: Web3Img,
 
     quarters: [
       {
         discription:
-          "AI-351: Developing Planet-Scale Intelligent APIs and Python Programming",
+          "CN-351: Certified Kubernetes Application Developer (CKAD)",
         header: "Quarter IV",
         number: 4,
       },
       {
-        discription: "AI-361: Deep Learning and MLOps",
+        discription: "CN-361: Developing Multi-Cloud APIs using CDK for Terraform",
         header: "Quarter V",
         number: 5,
       },
     ],
   },
   {
-    slug: "ai",
-    headers: "II.	Artificial Intelligence (AI) and Deep Learning Specialization",
+    slug: "iot",
+    headers: "Ambient Computing and IoT Specialization",
     description:
-      "The AI and Deep Learning specialization focuses on building and deploying intelligent APIs using OpenAI models and building custom Deep Learning Tensorflow models.",
+      "The Ambient Computing and IoT Specialization focuses on building Smart Homes, Offices, Factories, and Cities using Voice computing, Matter Protocol, and Embedded Devices.",
     image: Web3Img,
 
     quarters: [
       {
         discription:
-          "AI-351: Developing Planet-Scale Intelligent APIs and Python Programming",
+          "AC-351: Ambient Computing with Voice Assistants and Matter Protocol Devices",
         header: "Quarter IV",
         number: 4,
       },
       {
-        discription: "AI-361: Deep Learning and MLOps",
+        discription: "AC-361: Embedded Programming using C and Rust",
         header: "Quarter V",
         number: 5,
       },
     ],
   },
   {
-    slug: "ai",
-    headers: "II.	Artificial Intelligence (AI) and Deep Learning Specialization",
+    slug: "bio",
+    headers: "Genomics and Bioinformatics Specialization",
     description:
-      "The AI and Deep Learning specialization focuses on building and deploying intelligent APIs using OpenAI models and building custom Deep Learning Tensorflow models.",
+      "Genomics is the study of the total genetic makeup of individual organisms, and how this genetic information is structured, functions, and has evolved; bioinformatics encompasses a diverse range of analytical methods and tools applied to genomic data. This Specialization focuses on performing complex bioinformatics analysis using the most essential Python libraries and applications.",
     image: Web3Img,
 
     quarters: [
       {
         discription:
-          "AI-351: Developing Planet-Scale Intelligent APIs and Python Programming",
+          "Bio-351: Python for Biologists",
         header: "Quarter IV",
         number: 4,
       },
       {
-        discription: "AI-361: Deep Learning and MLOps",
+        discription: "Bio-361: Bioinformatics with Python",
         header: "Quarter V",
         number: 5,
       },
     ],
   },
   {
-    slug: "ai",
-    headers: "II.	Artificial Intelligence (AI) and Deep Learning Specialization",
+    slug: "nps",
+    headers: "Network Programmability and Automation Specialization",
     description:
-      "The AI and Deep Learning specialization focuses on building and deploying intelligent APIs using OpenAI models and building custom Deep Learning Tensorflow models.",
+      "More than ever, network engineers are finding it challenging to complete their duties entirely manually. Network automation is now crucial due to new protocols, technologies, delivery models, and the requirement for enterprises to become more adaptable and agile. This course teaches network engineers how to automate systems with code using a variety of technologies and tools, including Linux, Python, APIs, and Git.",
     image: Web3Img,
 
     quarters: [
       {
         discription:
-          "AI-351: Developing Planet-Scale Intelligent APIs and Python Programming",
+          "NPA-351: CCNA 200-301 Certification",
         header: "Quarter IV",
         number: 4,
       },
       {
-        discription: "AI-361: Deep Learning and MLOps",
+        discription: "NPA-361: Network Programmability and Automation",
         header: "Quarter V",
         number: 5,
       },
