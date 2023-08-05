@@ -13,8 +13,9 @@ const outcomePoints = [
 
 const ProgramOutcome = () => {
   return (
-    <section className="mt-14 md:mt-28 mb-16">
-      <Wrapper>
+    <Wrapper>
+      <div className="shadow-xl self-start rounded-xl border border-slate-200 mt-6 py-2 px-8">
+    <section className="mt-6 md:mt-28 mb-16">
         <div className="flex gap-x-8 items-center flex-col-reverse md:flex-row ">
           {/* Left Image */}
           <div className="flex-1 ">
@@ -31,7 +32,7 @@ const ProgramOutcome = () => {
               are marketed globally by the Panaverse DAO. You will also have the
               opportunity to offer your services at a rate of $50 per hour,
               providing a path to financial stability while contributing to the
-              growth of Pakistan's software exports.
+              growth of Pakistan software exports.
             </p>
             <div className="mt-6 grid grid-cols-2 gap-x-2 gap-y-4 ">
               {outcomePoints.map((item, i) => (
@@ -74,8 +75,11 @@ const ProgramOutcome = () => {
             </div>
           </div>
         </div>
-      </Wrapper>
+
     </section>
+    </div>
+
+    </Wrapper>
   );
 };
 
